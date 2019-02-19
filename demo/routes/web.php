@@ -22,3 +22,7 @@ Route::get('/sign-in', 'UserController@indexSignIn');
 Route::get('/users', 'UserController@indexUsers');
 
 Route::get('/create-user', 'UserController@indexCreateUser');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
